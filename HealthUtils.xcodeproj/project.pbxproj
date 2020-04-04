@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		A82462672438FEF900881C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82462652438FEF900881C46 /* LaunchScreen.storyboard */; };
 		A82462722438FEF900881C46 /* HealthUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82462712438FEF900881C46 /* HealthUtilsTests.swift */; };
 		A824627D2438FEF900881C46 /* HealthUtilsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A824627C2438FEF900881C46 /* HealthUtilsUITests.swift */; };
+		A824628C2439005700881C46 /* BMICalculator in Frameworks */ = {isa = PBXBuildFile; productRef = A824628B2439005700881C46 /* BMICalculator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A82462572438FEF700881C46 /* HealthUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82462572438FEF700881C46 /* Health Utils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health Utils.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A824625A2438FEF700881C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A824625C2438FEF700881C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A824625E2438FEF700881C46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A824628C2439005700881C46 /* BMICalculator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +91,7 @@
 		A82462582438FEF700881C46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A82462572438FEF700881C46 /* HealthUtils.app */,
+				A82462572438FEF700881C46 /* Health Utils.app */,
 				A824626D2438FEF900881C46 /* HealthUtilsTests.xctest */,
 				A82462782438FEF900881C46 /* HealthUtilsUITests.xctest */,
 			);
@@ -152,8 +154,11 @@
 			dependencies = (
 			);
 			name = HealthUtils;
+			packageProductDependencies = (
+				A824628B2439005700881C46 /* BMICalculator */,
+			);
 			productName = HealthUtils;
-			productReference = A82462572438FEF700881C46 /* HealthUtils.app */;
+			productReference = A82462572438FEF700881C46 /* Health Utils.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A824626C2438FEF900881C46 /* HealthUtilsTests */ = {
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = A824624E2438FEF700881C46;
+			packageReferences = (
+				A824628A2439005700881C46 /* XCRemoteSwiftPackageReference "BMICalculator" */,
+			);
 			productRefGroup = A82462582438FEF700881C46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgeniselli.HealthUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Health Utils";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jgeniselli.HealthUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Health Utils";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A824628A2439005700881C46 /* XCRemoteSwiftPackageReference "BMICalculator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JoaoGeniselli/BMICalculator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A824628B2439005700881C46 /* BMICalculator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A824628A2439005700881C46 /* XCRemoteSwiftPackageReference "BMICalculator" */;
+			productName = BMICalculator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A824624F2438FEF700881C46 /* Project object */;
 }
