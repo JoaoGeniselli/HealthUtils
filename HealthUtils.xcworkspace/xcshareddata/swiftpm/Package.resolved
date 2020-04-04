@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BMICalculator",
+        "repositoryURL": "https://github.com/JoaoGeniselli/BMICalculator.git",
+        "state": {
+          "branch": null,
+          "revision": "8bfce62615d421dce6308c59b2538d2ca4dd1358",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
